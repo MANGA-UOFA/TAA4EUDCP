@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<pre>
+Ground truth.                                          <font color="blue">TOP </font>                                                           
+                                                        │                                                              
+                                                       <font color="blue">CONJ</font>                                                           
+                               ┌────────────────────────┴────┬───────────────────────┐                                 
+                             <font color="blue">SMAIN</font>                           │                       │                                
+                   ┌──────┬────┴────┐                        │                       │                                 
+                <font color="blue">  INF   </font>  │         │                        │                    <font color="blue"> SMAIN  </font>                            
+       ┌───────────┴───── │ ─────── │ ──┬───────┬───────┐    │   ┌──────────┬────────┴──────────────┐                  
+    <font color="blue">  PP   </font>               │         │   │       │       │    │   │          │                     <font color="blue"> INF  </font>              
+ ┌─────┴─────┐            │         │   │       │       │    │   │          │                ┌──────┴─────┐            
+ │          <font color="blue">NP </font>           │         │   │       │       │    │   │      <font color="blue">   NP    </font>            │           <font color="blue">INF</font>          
+ │     ┌─────┴─────┐      │         │   │       │       │    │   │   ┌──────┼────────┐       │      ┌─────┴──────┐     
+<font color="red">In </font> <font color="red">sommige</font>     <font color="red">gevallen</font> <font color="red">zal</font>       <font color="red">dit</font> <font color="red">niet</font> <font color="red">toereikend</font> <font color="red">zijn</font> <font color="red">en </font> <font color="red">zal</font> <font color="red">een</font> <font color="red">specifiek</font> <font color="red">zorgplan</font> <font color="red">moeten</font> <font color="red">worden</font>     <font color="red">opgesteld</font>
+<font color="red">In </font> <font color="red">some</font>        <font color="red">cases</font>    <font color="red">will</font>      <font color="red">this</font> <font color="red">not</font> <font color="red">sufficient</font> <font color="red">be</font>   <font color="red">and </font> <font color="red">will</font> <font color="red">a</font> <font color="red">specific</font>  <font color="red">care-plan</font> <font color="red">must</font>  <font color="red">be</font>         <font color="red">established</font>
+
+Our ensemble.                                            <font color="blue">    </font>                                                               
+                                  ┌───────────────────────┴────────┬───────────────────────┐                                 
+                                 <font color="blue"> O </font>                               │                       │                                
+                              ┌───┴────────────────────────────┐   │                       │                                 
+                             <font color="blue"> O </font>                               │   │                       │                                
+                   ┌──────┬───┴───┐                            │   │                       │                                 
+                <font color="blue">   O    </font>  │       │                            │   │                    <font color="blue">   O    </font>                            
+       ┌───────────┴───── │ ───── │ ──────────────┐            │   │              ┌────────┴──────────────┐                  
+    <font color="blue">   O   </font>               │       │           <font color="blue">    O     </font>       │   │          <font color="blue">    O    </font>                 <font color="blue">  O   </font>              
+ ┌─────┴─────┐            │       │        ┌──────┴───────┐    │   │       ┌──────┴────────┐       ┌──────┴─────┐            
+ │          <font color="blue"> O </font>           │       │       <font color="blue"> O </font>             │    │   │      <font color="blue"> O </font>              │       │           <font color="blue"> O </font>          
+ │     ┌─────┴─────┐      │       │   ┌────┴──────┐       │    │   │   ┌───┴──────┐        │       │      ┌─────┴──────┐     
+<font color="red">In </font> <font color="red">sommige</font>     <font color="red">gevallen</font> <font color="red">zal</font>     <font color="red">dit</font> <font color="red">niet</font>     <font color="red">toereikend</font> <font color="red">zijn</font> <font color="red">en </font> <font color="red">zal</font> <font color="red">een</font>     <font color="red">specifiek</font> <font color="red">zorgplan</font> <font color="red">moeten</font> <font color="red">worden</font>     <font color="red">opgesteld</font>
+<font color="red">In </font> <font color="red">some</font>        <font color="red">cases</font>    <font color="red">will</font>    <font color="red">this</font> <font color="red">not</font>     <font color="red">sufficient</font> <font color="red">be</font>  <font color="red">and </font> <font color="red">will</font> <font color="red">a</font>      <font color="red">specific</font>  <font color="red">care-plan</font> <font color="red">must</font>  <font color="red">be</font>         <font color="red">established</font>
+
+Individual.                      <font color="blue">    </font>                                                                                   
+                          ┌───────┴───────────────────┐                                                                  
+                          │                          <font color="blue"> O  </font>                                                               
+       ┌───────────────── │ ──────────────────────────┴────────┐                                                         
+       │                  │                                   <font color="blue"> O </font>                                                       
+       │                  │   ┌────────────────────────────────┴───┐                                                     
+       │                  │   │                                   <font color="blue"> O </font>                                                   
+       │                  │   │               ┌────────────────────┴──────────┐                                          
+       │                  │   │               │                           <font color="blue">    O    </font>                                     
+       │                  │   │               │            ┌──────────────────┴────────┐                                 
+       │                  │   │               │            │                        <font color="blue">   O    </font>                            
+       │                  │   │               │            │   ┌───────────────────────┴───────┐                         
+       │                  │   │               │            │   │                             <font color="blue">  O   </font>                     
+       │                  │   │               │            │   │                       ┌───────┴───────────────────┐     
+       │                  │   │               │            │   │                    <font color="blue">   O    </font>                       │    
+       │                  │   │               │            │   │              ┌────────┴─────────────┐             │     
+    <font color="blue">   O   </font>               │   │           <font color="blue">    O     </font>       │   │          <font color="blue">    O    </font>                  │             │    
+ ┌─────┴─────┐            │   │        ┌──────┴───────┐    │   │       ┌──────┴────────┐             │             │     
+ │          <font color="blue"> O </font>           │   │       <font color="blue"> O </font>             │    │   │      <font color="blue"> O </font>              │            <font color="blue"> O </font>            │    
+ │     ┌─────┴─────┐      │   │   ┌────┴──────┐       │    │   │   ┌───┴──────┐        │       ┌─────┴────┐        │     
+<font color="red">In </font> <font color="red">sommige</font>     <font color="red">gevallen</font> <font color="red">zal</font> <font color="red">dit</font> <font color="red">niet</font>     <font color="red">toereikend</font> <font color="red">zijn</font> <font color="red">en </font> <font color="red">zal</font> <font color="red">een</font>     <font color="red">specifiek</font> <font color="red">zorgplan</font> <font color="red">moeten</font>     <font color="red">worden</font> <font color="red">opgesteld</font>
+<font color="red">In </font> <font color="red">some</font>        <font color="red">cases</font>   <font color="red">will</font> <font color="red">this</font> <font color="red">not</font>     <font color="red">sufficient</font> <font color="red">be</font>  <font color="red">and </font> <font color="red">will</font> <font color="red">a</font>      <font color="red">specific</font>  <font color="red">care-plan</font> <font color="red">must</font>      <font color="red">be</font>     <font color="red">established</font>
+
+Individual.                  <font color="blue">   </font>                                                                                            
+                              ┌───┐                                                                                          
+                              │  <font color="blue"> O </font>                                                                                        
+                          ┌── │ ──┴───┐                                                                                      
+                          │   │      <font color="blue"> O  </font>                                                                                   
+       ┌───────────────── │   │ ──────┴───────────────────┐                                                                  
+       │                  │   │                          <font color="blue"> O  </font>                                                               
+       │                  │   │               ┌───────────┴────────┐                                                         
+       │                  │   │               │                   <font color="blue"> O </font>                                                       
+       │                  │   │               │                ┌───┴───┐                                                     
+       │                  │   │               │                │      <font color="blue"> O </font>                                                   
+       │                  │   │               │                │   ┌───┴───────────────────┐                                 
+       │                  │   │               │                │   │                    <font color="blue">   O    </font>                            
+       │                  │   │               │                │   │              ┌────────┴──────────────┐                  
+    <font color="blue">   O   </font>               │   │           <font color="blue">    O     </font>           │   │          <font color="blue">    O    </font>                 <font color="blue">  O   </font>              
+ ┌─────┴─────┐            │   │       ┌───────┴───────┐        │   │       ┌──────┴────────┐       ┌──────┴─────┐            
+ │          <font color="blue"> O </font>           │   │       │              <font color="blue"> O </font>       │   │      <font color="blue"> O </font>              │       │           <font color="blue"> O </font>          
+ │     ┌─────┴─────┐      │   │       │       ┌───────┴───┐    │   │   ┌───┴──────┐        │       │      ┌─────┴──────┐     
+<font color="red">In </font> <font color="red">sommige</font>     <font color="red">gevallen</font> <font color="red">zal</font> <font color="red">dit</font>     <font color="red">niet</font> <font color="red">toereikend</font>     <font color="red">zijn</font> <font color="red">en </font> <font color="red">zal</font> <font color="red">een</font>     <font color="red">specifiek</font> <font color="red">zorgplan</font> <font color="red">moeten</font> <font color="red">worden</font>     <font color="red">opgesteld</font>
+<font color="red">In </font> <font color="red">some</font>        <font color="red">cases</font>    <font color="red">will</font> <font color="red">this</font>   <font color="red">not</font>  <font color="red">sufficient</font>     <font color="red">be</font>   <font color="red">and </font> <font color="red">will</font> <font color="red">a</font>     <font color="red">specific</font>  <font color="red">care-plan</font> <font color="red">must</font>  <font color="red">be</font>         <font color="red">established</font>
+
+Individual.                      <font color="blue">    </font>                                                                                       
+                          ┌───────┴───────────────────┐                                                                      
+                          │                          <font color="blue"> O  </font>                                                                   
+                          │   ┌───────────────────────┴────────────┐                                                         
+                          │   │                                   <font color="blue"> O </font>                                                       
+                          │   │        ┌───────────────────────────┴──────────┐                                              
+                          │   │        │                                  <font color="blue">    O    </font>                                         
+                          │   │        │                       ┌──────────────┴────────────┐                                 
+                          │  <font color="blue"> O </font>       │                       │                           │                                
+       ┌───────────────── │ ──┴─────── │ ───────────────────── │ ───────────────────────── │ ──────────────────────────┐     
+       │                  │           <font color="blue"> O </font>                      │                        <font color="blue">   O    </font>                       │    
+       │                  │       ┌────┴──────────────┐        │              ┌────────────┴─────────────┐             │     
+    <font color="blue">   O   </font>               │      <font color="blue"> O  </font>                 │        │          <font color="blue">    O    </font>                      │             │    
+ ┌─────┴─────┐            │   ┌───┴────┐              │        │       ┌──────┴──────┐                   │             │     
+ │          <font color="blue"> O </font>           │   │       <font color="blue"> O </font>             │       <font color="blue"> O </font>      │            <font color="blue"> O </font>                 <font color="blue"> O </font>            │    
+ │     ┌─────┴─────┐      │   │   ┌────┴──────┐       │    ┌───┴───┐   │      ┌──────┴─────┐       ┌─────┴────┐        │     
+<font color="red">In </font> <font color="red">sommige</font>     <font color="red">gevallen</font> <font color="red">zal</font> <font color="red">dit</font> <font color="red">niet</font>     <font color="red">toereikend</font> <font color="red">zijn</font> <font color="red">en </font>     <font color="red">zal</font> <font color="red">een</font> <font color="red">specifiek</font>     <font color="red">zorgplan</font> <font color="red">moeten</font>     <font color="red">worden</font> <font color="red">opgesteld</font>
+<font color="red">In </font> <font color="red">some</font>        <font color="red">cases</font>   <font color="red">will</font> <font color="red">this</font> <font color="red">not</font>     <font color="red">sufficient</font> <font color="red">be</font>   <font color="red">and </font>    <font color="red">will</font> <font color="red">a</font>  <font color="red">specific</font>      <font color="red">care-plan</font> <font color="red">must</font>      <font color="red">be</font>     <font color="red">established</font>
+
+Individual.                                                       <font color="blue">   </font>                                                           
+                                                              ┌────┴──────────────────┐                                          
+                                                             <font color="blue"> O  </font>                     │                                         
+                                                      ┌───────┴────────┐              │                                          
+                                                  <font color="blue">    O     </font>           │              │                                         
+                                      ┌───────────────┴─────────────── │ ──────────── │ ──────────────────────┐                  
+                                     <font color="blue"> O </font>                               │              │                       │                 
+                                  ┌───┴────────────────────────────┐   │              │                       │                  
+                                 <font color="blue"> O </font>                               │   │              │                       │                 
+                          ┌───────┴───┐                            │   │              │                       │                  
+                         <font color="blue"> O </font>          │                            │   │              │                       │                 
+                   ┌──────┴───┐       │                            │   │              │                       │                  
+                <font color="blue">   O    </font>      │       │                            │   │              │                       │                 
+       ┌───────────┴───────── │ ───── │ ──────────────┐            │   │              │                       │                  
+    <font color="blue">   O   </font>                   │       │           <font color="blue">    O     </font>       │   │          <font color="blue">    O    </font>                 <font color="blue">  O   </font>              
+ ┌─────┴─────┐                │       │        ┌──────┴───────┐    │   │       ┌──────┴────────┐       ┌──────┴─────┐            
+ │          <font color="blue"> O </font>               │       │       <font color="blue"> O </font>             │    │   │      <font color="blue"> O </font>              │       │           <font color="blue"> O </font>          
+ │     ┌─────┴─────┐          │       │   ┌────┴──────┐       │    │   │   ┌───┴──────┐        │       │      ┌─────┴──────┐     
+<font color="red">In </font> <font color="red">sommige</font>     <font color="red">gevallen</font>     <font color="red">zal</font>     <font color="red">dit</font> <font color="red">niet</font>     <font color="red">toereikend</font> <font color="red">zijn</font> <font color="red">en </font> <font color="red">zal</font> <font color="red">een</font>     <font color="red">specifiek</font> <font color="red">zorgplan</font> <font color="red">moeten</font> <font color="red">worden</font>     <font color="red">opgesteld</font>
+<font color="red">In </font> <font color="red">some</font>        <font color="red">cases</font>        <font color="red">will</font>    <font color="red">this</font> <font color="red">not</font>     <font color="red">sufficient</font> <font color="red">be</font>   <font color="red">and </font> <font color="red">will</font> <font color="red">a</font>     <font color="red">specific</font>  <font color="red">care-plan</font> <font color="red">must</font>  <font color="red">be</font>         <font color="red">established</font>
+
+Individual.                                                   <font color="blue">   </font>                                                               
+                                                          ┌────┴───────┐                                                         
+                                                         <font color="blue"> O  </font>          │                                                        
+                                  ┌───────────────────────┴─────────── │ ──────────────────────┐                                 
+                                 <font color="blue"> O </font>                                   │                       │                                
+                          ┌───────┴────────────────────────────────┐   │                       │                                 
+                         <font color="blue"> O </font>                                       │   │                       │                                
+                          ┌───┐                                    │   │                       │                                 
+                          │  <font color="blue"> O </font>                                   │   │                       │                                
+                   ┌───── │ ──┴───┐                                │   │                       │                                 
+                <font color="blue">   O    </font>  │       │                                │   │                    <font color="blue">   O    </font>                            
+       ┌───────────┴───── │ ───── │ ──────────┐                    │   │              ┌────────┴──────────────┐                  
+    <font color="blue">   O   </font>               │       │       <font color="blue">    O     </font>               │   │          <font color="blue">    O    </font>                 <font color="blue">  O   </font>              
+ ┌─────┴─────┐            │       │   ┌───────┴───────┐            │   │       ┌──────┴────────┐       ┌──────┴─────┐            
+ │          <font color="blue"> O </font>           │       │   │              <font color="blue"> O </font>           │   │      <font color="blue"> O </font>              │       │           <font color="blue"> O </font>          
+ │     ┌─────┴─────┐      │       │   │       ┌───────┴───┐        │   │   ┌───┴──────┐        │       │      ┌─────┴──────┐     
+<font color="red">In </font> <font color="red">sommige</font>     <font color="red">gevallen</font> <font color="red">zal</font>     <font color="red">dit</font> <font color="red">niet</font> <font color="red">toereikend</font>     <font color="red">zijn</font>     <font color="red">en </font> <font color="red">zal</font> <font color="red">een</font>     <font color="red">specifiek</font> <font color="red">zorgplan</font> <font color="red">moeten</font> <font color="red">worden</font>     <font color="red">opgesteld</font>
+<font color="red">In </font> <font color="red">some</font>        <font color="red">cases</font>    <font color="red">will</font>    <font color="red">this</font> <font color="red">not</font> <font color="red">sufficient</font>     <font color="red">be</font>       <font color="red">and </font> <font color="red">will</font> <font color="red">a</font>     <font color="red">specific</font>  <font color="red">care-plan</font> <font color="red">must</font>  <font color="red">be</font>         <font color="red">established</font>
+
+</pre></body></html>

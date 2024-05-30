@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<pre>
+Ground truth. 
+           <font color="blue"> TOP  </font>                                                          
+             │                                                              
+           <font color="blue">SMAIN </font>                                                          
+      ┌──────┴───────────────────┐                                          
+      │                    <font color="blue">    PPART    </font>                                   
+ ┌─── │ ─────────────────────────┼───────────┐                              
+ │    │                          │       <font color="blue">   NP    </font>                         
+ │    │      ┌───────┬────────── │ ──────────┴────────────┐                 
+ │    │      │       │           │                      <font color="blue">PPART</font>              
+ │    │      │       │           │           ┌────────────┴────┐            
+ │    │      │       │           │           │                <font color="blue">PP </font>          
+ │    │      │       │           │           │      ┌──────────┴───┐        
+ │    │      │       │           │           │      │             <font color="blue"> NP </font>     
+ │    │      │       │           │           │      │     ┌────────┼────┐   
+<font color="red">Er </font> <font color="red">worden</font> <font color="red">15.000</font> <font color="red">woningen</font> <font color="red">geïnspecteerd</font> <font color="red">verspreid</font> <font color="red">over</font> <font color="red"> het </font>     <font color="red">hele</font> <font color="red">land</font>
+<font color="red">Are </font> <font color="red">being</font> <font color="red">15,000</font> <font color="red">houses</font>   <font color="red">inspected</font>     <font color="red">spread</font>    <font color="red">over</font> <font color="red"> the </font>     <font color="red">whole</font> <font color="red">country</font>
+
+Our ensemble. 
+           <font color="blue">      </font>                                                            
+      ┌──────┴───────────────────────┐                                        
+      │                        <font color="blue">      O      </font>                                 
+ ┌─── │ ─────────────────┬───────────┴───────────────────────┐                
+ │    │                  │                                  <font color="blue"> O </font>              
+ │    │                  │                       ┌───────────┴───┐            
+ │    │                  │                       │              <font color="blue"> O </font>          
+ │    │                  │                       │      ┌────────┴───┐        
+ │    │               <font color="blue">   O    </font>                   │      │           <font color="blue"> O  </font>     
+ │    │            ┌─────┴───────────┐           │      │        ┌───┴────┐   
+ │    │           <font color="blue"> O </font>                │           │      │       <font color="blue"> O </font>       │  
+ │    │      ┌─────┴─────┐           │           │      │    ┌───┴───┐    │   
+<font color="red">Er </font> <font color="red">worden</font> <font color="red">15.000</font>     <font color="red">woningen</font> <font color="red">geïnspecteerd</font> <font color="red">verspreid</font> <font color="red">over</font> <font color="red">het</font>     <font color="red">hele</font> <font color="red">land</font>
+<font color="red">Are </font> <font color="red">being</font> <font color="red">15,000</font>     <font color="red">houses</font>   <font color="red">inspected</font>     <font color="red">spread</font>    <font color="red">over</font> <font color="red">the </font>    <font color="red">whole</font> <font color="red">country</font>
+
+Individual. 
+           <font color="blue">      </font>                                                                
+      ┌──────┴───────────────────────────┐                                        
+      │                            <font color="blue">      O      </font>                                 
+ ┌─── │ ─────────────────────────────────┴───────────┐                            
+ │    │                                          <font color="blue">    O    </font>                       
+ │    │                         ┌────────────────────┴───────────────┐            
+ │    │                        <font color="blue"> O </font>                                  <font color="blue"> O </font>          
+ │    │                  ┌──────┴────────────────────┐      ┌────────┴───┐        
+ │    │               <font color="blue">   O    </font>                       │      │           <font color="blue"> O  </font>     
+ │    │            ┌─────┴───────────────┐           │      │        ┌───┴────┐   
+ │    │           <font color="blue"> O </font>                    │           │      │       <font color="blue"> O </font>       │  
+ │    │      ┌─────┴─────┐               │           │      │    ┌───┴───┐    │   
+<font color="red">Er </font> <font color="red">worden</font> <font color="red">15.000</font>     <font color="red">woningen</font>     <font color="red">geïnspecteerd</font> <font color="red">verspreid</font> <font color="red">over</font> <font color="red">het</font>     <font color="red">hele</font> <font color="red">land</font>
+<font color="red">Are </font> <font color="red">being</font> <font color="red">15,000</font>     <font color="red">houses</font>       <font color="red">inspected</font>     <font color="red">spread</font>    <font color="red">over</font> <font color="red">the </font>    <font color="red">whole</font> <font color="red">country</font>
+
+Individual. 
+                               <font color="blue">   </font>                                               
+                         ┌──────┴────────┐                                        
+                         │         <font color="blue">      O      </font>                                 
+      ┌───────────────── │ ──────────────┴───────────┐                            
+      │                  │                       <font color="blue">    O    </font>                       
+ ┌─── │ ──────────────── │ ──────────────────────────┴───────────┐                
+ │    │                  │                                      <font color="blue"> O </font>              
+ │    │                  │                           ┌───────────┴───┐            
+ │    │                  │                           │              <font color="blue"> O </font>          
+ │    │                  │                           │      ┌────────┴───┐        
+ │    │               <font color="blue">   O    </font>                       │      │           <font color="blue"> O  </font>     
+ │    │            ┌─────┴───────────────┐           │      │        ┌───┴────┐   
+ │    │           <font color="blue"> O </font>                    │           │      │       <font color="blue"> O </font>       │  
+ │    │      ┌─────┴─────┐               │           │      │    ┌───┴───┐    │   
+<font color="red">Er </font> <font color="red">worden</font> <font color="red">15.000</font>     <font color="red">woningen</font>     <font color="red">geïnspecteerd</font> <font color="red">verspreid</font> <font color="red">over</font> <font color="red">het</font>     <font color="red">hele</font> <font color="red">land</font>
+<font color="red">Are </font> <font color="red">being</font> <font color="red">15,000</font>     <font color="red">houses</font>       <font color="red">inspected</font>     <font color="red">spread</font>    <font color="red">over</font> <font color="red">the </font>    <font color="red">whole</font> <font color="red">country</font>
+
+Individual. 
+           <font color="blue">      </font>                                                                
+      ┌──────┴───────────────────────────┐                                        
+      │                            <font color="blue">      O      </font>                                 
+      │                         ┌────────┴──────────────────┐                     
+      │                         │                          <font color="blue"> O  </font>                  
+ ┌─── │ ─────────────────────── │ ──────────────────────────┴────────┐            
+ │    │                        <font color="blue"> O </font>                                  <font color="blue"> O </font>          
+ │    │                  ┌──────┴────────────────────┐      ┌────────┴───┐        
+ │    │               <font color="blue">   O    </font>                       │      │           <font color="blue"> O  </font>     
+ │    │            ┌─────┴───────────────┐           │      │        ┌───┴────┐   
+ │    │           <font color="blue"> O </font>                    │           │      │       <font color="blue"> O </font>       │  
+ │    │      ┌─────┴─────┐               │           │      │    ┌───┴───┐    │   
+<font color="red">Er </font> <font color="red">worden</font> <font color="red">15.000</font>     <font color="red">woningen</font>     <font color="red">geïnspecteerd</font> <font color="red">verspreid</font> <font color="red">over</font> <font color="red">het</font>     <font color="red">hele</font> <font color="red">land</font>
+<font color="red">Are </font> <font color="red">being</font> <font color="red">15,000</font>     <font color="red">houses</font>       <font color="red">inspected</font>     <font color="red">spread</font>    <font color="red">over</font> <font color="red">the </font>    <font color="red">whole</font> <font color="red">country</font>
+
+Individual. 
+                               <font color="blue">   </font>                                               
+                         ┌──────┴────────┐                                        
+                         │         <font color="blue">      O      </font>                                 
+      ┌───────────────── │ ──────────────┴───────────┐                            
+      │                  │                       <font color="blue">    O    </font>                       
+ ┌─── │ ──────────────── │ ──────────────────────────┴───────────┐                
+ │    │                  │                                      <font color="blue"> O </font>              
+ │    │                  │                           ┌───────────┴───┐            
+ │    │                  │                           │              <font color="blue"> O </font>          
+ │    │                  │                           │      ┌────────┴───┐        
+ │    │               <font color="blue">   O    </font>                       │      │           <font color="blue"> O  </font>     
+ │    │            ┌─────┴───────────────┐           │      │        ┌───┴────┐   
+ │    │           <font color="blue"> O </font>                    │           │      │       <font color="blue"> O </font>       │  
+ │    │      ┌─────┴─────┐               │           │      │    ┌───┴───┐    │   
+<font color="red">Er </font> <font color="red">worden</font> <font color="red">15.000</font>     <font color="red">woningen</font>     <font color="red">geïnspecteerd</font> <font color="red">verspreid</font> <font color="red">over</font> <font color="red">het</font>     <font color="red">hele</font> <font color="red">land</font>
+<font color="red">Are </font> <font color="red">being</font> <font color="red">15,000</font>     <font color="red">houses</font>       <font color="red">inspected</font>     <font color="red">spread</font>    <font color="red">over</font> <font color="red">the </font>    <font color="red">whole</font> <font color="red">country</font>
+
+Individual. 
+           <font color="blue">      </font>                                                            
+      ┌──────┴───────────────────────┐                                        
+      │                        <font color="blue">      O      </font>                                 
+ ┌─── │ ─────────────────────────────┴───────────┐                            
+ │    │                                      <font color="blue">    O    </font>                       
+ │    │                  ┌───────────────────────┴───────────┐                
+ │    │                  │                                  <font color="blue"> O </font>              
+ │    │                  │                       ┌───────────┴───┐            
+ │    │                  │                       │              <font color="blue"> O </font>          
+ │    │                  │                       │      ┌────────┴───┐        
+ │    │               <font color="blue">   O    </font>                   │      │           <font color="blue"> O  </font>     
+ │    │            ┌─────┴───────────┐           │      │        ┌───┴────┐   
+ │    │           <font color="blue"> O </font>                │           │      │       <font color="blue"> O </font>       │  
+ │    │      ┌─────┴─────┐           │           │      │    ┌───┴───┐    │   
+<font color="red">Er </font> <font color="red">worden</font> <font color="red">15.000</font>     <font color="red">woningen</font> <font color="red">geïnspecteerd</font> <font color="red">verspreid</font> <font color="red">over</font> <font color="red">het</font>     <font color="red">hele</font> <font color="red">land</font>
+<font color="red">Are </font> <font color="red">being</font> <font color="red">15,000</font>     <font color="red">houses</font>   <font color="red">inspected</font>     <font color="red">spread</font>    <font color="red">over</font> <font color="red">the </font>    <font color="red">whole</font> <font color="red">country</font>
+
+</pre></body></html>

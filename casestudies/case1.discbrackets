@@ -1,0 +1,7 @@
+(TOP (CONJ (SMAIN (INF (PP (NP 1=sommige 2=gevallen) 0=In) 5=niet 6=toereikend 7=zijn) 3=zal 4=dit) (SMAIN (NP 10=een 11=specifiek 12=zorgplan) (INF (INF 15=opgesteld 14=worden) 13=moeten) 9=zal) 8=en))
+(  (O (O (O (O (O 5=niet 6=toereikend) 7=zijn) (O (O 1=sommige 2=gevallen) 0=In)) 3=zal 4=dit) 8=en) (O (O (O 14=worden 15=opgesteld) 13=moeten) (O (O 10=een 11=specifiek) 12=zorgplan)) 9=zal)
+(  (O (O (O (O (O (O (O (O (O 10=een 11=specifiek) 12=zorgplan) (O 13=moeten 14=worden)) 15=opgesteld) 9=zal) 8=en) (O (O 5=niet 6=toereikend) 7=zijn)) 4=dit) (O (O 1=sommige 2=gevallen) 0=In)) 3=zal)
+(  (O (O (O (O (O (O (O (O 10=een 11=specifiek) 12=zorgplan) (O (O 14=worden 15=opgesteld) 13=moeten)) 9=zal) 8=en) (O (O 6=toereikend 7=zijn) 5=niet)) (O (O 1=sommige 2=gevallen) 0=In)) 3=zal) 4=dit)
+(  (O (O (O (O (O (O 11=specifiek 12=zorgplan) 10=een) (O 13=moeten 14=worden)) (O 8=en 9=zal)) (O (O (O 5=niet 6=toereikend) 4=dit) 7=zijn)) (O (O (O 1=sommige 2=gevallen) 0=In) 15=opgesteld)) 3=zal)
+(  (O (O (O (O (O (O (O (O 1=sommige 2=gevallen) 0=In) (O (O 5=niet 6=toereikend) 7=zijn)) 3=zal) 4=dit) 8=en) (O (O 14=worden 15=opgesteld) 13=moeten)) 9=zal) (O (O 10=een 11=specifiek) 12=zorgplan))
+(  (O (O (O (O (O (O (O 1=sommige 2=gevallen) 0=In) (O (O 6=toereikend 7=zijn) 5=niet)) 4=dit) 3=zal) 8=en) (O (O (O 10=een 11=specifiek) 12=zorgplan) (O (O 14=worden 15=opgesteld) 13=moeten))) 9=zal)

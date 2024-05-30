@@ -1,0 +1,7 @@
+(TOP (SMAIN (PPART (NP (PPART (PP (NP 7=het 8=hele 9=land) 6=over) 5=verspreid) 2=15.000 3=woningen) 0=Er 4=geïnspecteerd) 1=worden))
+(  (O (O (O (O (O 7=het 8=hele) 9=land) 6=over) 5=verspreid) (O (O 2=15.000 3=woningen) 4=geïnspecteerd) 0=Er) 1=worden)
+(  (O (O (O (O (O 2=15.000 3=woningen) 4=geïnspecteerd) 5=verspreid) (O (O (O 7=het 8=hele) 9=land) 6=over)) 0=Er) 1=worden)
+(  (O (O (O (O (O (O 7=het 8=hele) 9=land) 6=over) 5=verspreid) 0=Er) 1=worden) (O (O 2=15.000 3=woningen) 4=geïnspecteerd))
+(  (O (O (O (O (O 7=het 8=hele) 9=land) 6=over) 0=Er) (O (O (O 2=15.000 3=woningen) 4=geïnspecteerd) 5=verspreid)) 1=worden)
+(  (O (O (O (O (O (O 7=het 8=hele) 9=land) 6=over) 5=verspreid) 0=Er) 1=worden) (O (O 2=15.000 3=woningen) 4=geïnspecteerd))
+(  (O (O (O (O (O (O 7=het 8=hele) 9=land) 6=over) 5=verspreid) (O (O 2=15.000 3=woningen) 4=geïnspecteerd)) 0=Er) 1=worden)
