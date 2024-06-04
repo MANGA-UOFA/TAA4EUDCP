@@ -15,3 +15,6 @@ def f1(prediction, gold):
         'discontinuous': f1_d
     }
     return metrics
+
+def NCS_test(win, tie, loss, alpha=.05): #Also can be used to estimate INS test for large values. For small values, INS has a pre-calculated table to lookup the boundries.
+    return win > binom.ppf(1-alpha, win+loss, 0.5)
