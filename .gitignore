@@ -1,3 +1,4 @@
 individuals/*/*/*
 !individuals/*/*/*.pkl
 !individuals/*/*/*.yaml
+__pycache__
