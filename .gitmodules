@@ -1,3 +1,6 @@
 [submodule "TN-LCFRS"]
 	path = TN-LCFRS
 	url = https://github.com/sustcsonglin/TN-LCFRS
+[submodule "disco-dop"]
+	path = disco-dop
+	url = https://github.com/andreasvc/disco-dop
