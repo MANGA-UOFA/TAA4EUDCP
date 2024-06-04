@@ -1,0 +1,3 @@
+individuals/*/*/*
+!individuals/*/*/*.pkl
+!individuals/*/*/*.yaml
