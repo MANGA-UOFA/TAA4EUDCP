@@ -59,4 +59,4 @@ avgs = ensemble(individuals, weights=weights)
 print(f1(avgs, gold))
 ```
 
-<a href="https://shayeghb.github.io/"><img src="https://shayeghb.github.io/img/favicon.png" style="background-color:red;"/></a>
+<a href="https://TheShayegh.github.io/"><img src="https://TheShayegh.github.io/img/favicon.png" style="background-color:red;"/></a>
